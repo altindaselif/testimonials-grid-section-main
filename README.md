@@ -16,8 +16,8 @@ This is a Testimonials Grid Section that you can use on your websites.
 
 ## Links
 
-- Solution URL: [Testimonials Grid Section Solution](https://github.com/altindaselif/four-card-feature-section-master)
-- Live Site URL: [Testimonials Grid Section Live](https://altindaselif.github.io/four-card-feature-section-master/)
+- Solution URL: [Testimonials Grid Section Solution](https://github.com/altindaselif/testimonials-grid-section-main)
+- Live Site URL: [Testimonials Grid Section Live](https://altindaselif.github.io/testimonials-grid-section-main/)
 
 ## Built with
 
