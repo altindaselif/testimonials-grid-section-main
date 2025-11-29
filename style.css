@@ -1,15 +1,49 @@
 :root {
-  --purple-50: hsl(260, 100%, 95%);
-  --purple-300: hsl(264, 82%, 80%);
-  --purple-500: hsl(263, 55%, 52%);
-  --white: hsl(0, 0%, 100%);
-  --grey-100: hsl(214, 17%, 92%);
-  --grey-200: hsl(0, 0%, 81%);
-  --grey-400: hsl(224, 10%, 45%);
-  --grey-500: hsl(217, 19%, 35%);
-  --dark-blue: hsl(219, 29%, 14%);
-  --black: hsl(0, 0%, 7%);
-  --shadow: rgba(0, 0, 0, 0.25);
+  /* Colors */
+  --black: #121212;
+  --dark-blue: #19202d;
+  --white: #fff;
+  --grey-100: #e7eaee;
+  --grey-200: #cfcfcf;
+  --grey-400: #676d7e;
+  --grey-500: #48556a;
+  --purple-50: #ede4ff;
+  --purple-300: #a775f1;
+  --purple-500: #733fc8;
+  --shadow: rgba(72, 85, 106, 0.25);
+
+  /* Typography - Font Family */
+  --font-family: "Barlow Semi Condensed", sans-serif;
+
+  /* Text Preset 1 */
+  --tp-1-size: 2rem;
+  --tp-1-weight: 600;
+  --tp-1-line-height: 1.2;
+
+  /* Text Preset 2 */
+  --tp-2-size: 1.3rem;
+  --tp-2-weight: 500;
+  --tp-2-line-height: 1.1;
+
+  /* Text Preset 3 */
+  --tp-3-size: 1.3rem;
+  --tp-3-weight: 500;
+  --tp-3-line-height: 1.4;
+
+  /* Text Preset 4 */
+  --tp-4-size: 1.1rem;
+  --tp-4-weight: 500;
+  --tp-4-line-height: 1.1;
+
+  /* Spacing */
+  --spacing-1600: 12.8rem;
+  --spacing-600: 4.8rem;
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-150: 1.2rem;
+  --spacing-100: 0.8rem;
 }
 
 * {
@@ -26,9 +60,10 @@ html {
 }
 
 body {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: var(--font-family);
   background-color: var(--white);
   min-height: 100vh;
+  padding: var(--spacing-300);
 
   display: flex;
   justify-content: center;
@@ -36,18 +71,18 @@ body {
 }
 
 .testimonial-grid {
-  height: 58rem;
-  width: 115rem;
+  height: 58.2rem;
+  width: 111.4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+  gap: var(--spacing-400);
 }
 
 .testimonial {
-  border-radius: 1rem;
-  padding: 2.5rem;
-  box-shadow: 5rem 6rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+  padding: var(--spacing-400);
+  box-shadow: 4rem 6rem 5rem -4.7rem var(--shadow);
 }
 
 .testimonial-daniel {
@@ -55,7 +90,6 @@ body {
   grid-row: 1;
   background-color: var(--purple-500);
   color: var(--purple-50);
-  position: relative;
 
   background-image: url("images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
@@ -82,12 +116,12 @@ body {
   grid-column: 4;
   grid-row: 1 / span 2;
   background-color: var(--white);
-  color: var(--grey-500);
+  color: var(--grey-400);
 }
 
 .testimonial-kira .testimonial-name,
 .testimonial-kira .testimonial-detail-1 {
-  color: var(--grey-400);
+  color: var(--grey-500);
 }
 
 .testimonial-jeanette {
@@ -106,7 +140,7 @@ body {
   grid-column: 2 / span 2;
   grid-row: 2;
   background-color: var(--dark-blue);
-  color: var(--grey-200);
+  color: var(--grey-100);
 }
 
 .testimonial-patrick .testimonial-name,
@@ -115,43 +149,101 @@ body {
 }
 
 .testimonial-header {
-  font-size: 1.4rem;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
+  gap: var(--spacing-200);
+  margin-bottom: var(--spacing-200);
 }
 
 .testimonial-name {
-  font-weight: 600;
+  font-size: var(--tp-2-size);
+  font-weight: var(--tp-2-weight);
+  line-height: var(--tp-2-line-height);
+}
+
+.testimonial-title {
+  font-size: var(--tp-4-size);
+  font-weight: var(--tp-4-weight);
+  line-height: var(--tp-4-line-height);
 }
 
 .testimonial-img {
-  height: 4rem;
+  height: 2.8rem;
   border-radius: 50%;
 }
 
+.img-border {
+  border: solid 2px var(--purple-300);
+}
+
 .testimonial-detail-1 {
-  font-size: 2.1rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+  font-size: var(--tp-1-size);
+  font-weight: var(--tp-1-weight);
+  line-height: var(--tp-1-line-height);
+  margin-bottom: var(--spacing-200);
 }
 
 .testimonial-detail-2 {
-  font-size: 1.4rem;
+  font-size: var(--tp-3-size);
+  font-weight: var(--tp-3-weight);
+  line-height: var(--tp-3-line-height);
 }
 
 /* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+/* Tablet = 768px = 48em */
 /* Mobile = 384px = 24em */
+
+/******************************************/
+/* BELOW 768px (Tablet) */
+/******************************************/
+@media (max-width: 48em) {
+  body {
+    padding: var(--spacing-600) var(--spacing-300);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 3.2rem;
+    height: 115.7rem;
+    width: 64.7rem;
+  }
+
+  .testimonial-daniel {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .testimonial-jonathan {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .testimonial-kira {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+  .testimonial-jeanette {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .testimonial-patrick {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+}
 
 /******************************************/
 /* BELOW 384px (Mobile) */
 /******************************************/
 @media (max-width: 24em) {
   body {
-    padding: 5rem 2rem;
-
+    padding: var(--spacing-600) var(--spacing-300);
     display: block;
+  }
+
+  .testimonial {
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .testimonial-grid {

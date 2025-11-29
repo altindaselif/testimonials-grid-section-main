@@ -2,31 +2,27 @@
 
 This is a Testimonials Grid Section that you can use on your websites.
 
-## Table of contents
+## Screenshots
 
-- [Screenshot](#screenshot)
-- [Links](#links)
-- [Built with](#built-with)
-- [Author](#author)
-
-## Screenshot
-
-- [Desktop Screenshot](desktop-screenshot.png)
-- [Mobile Screenshot](mobile-screenshot.png)
+- **Desktop:** ![Desktop Screenshot](desktop-screenshot.png)
+- **Tablet:** ![Tablet Screenshot](tablet-screenshot.png)
+- **Mobile:** ![Mobile Screenshot](mobile-screenshot.png)
 
 ## Links
 
-- Solution URL: [Testimonials Grid Section Solution](https://github.com/altindaselif/testimonials-grid-section-main)
-- Live Site URL: [Testimonials Grid Section Live](https://altindaselif.github.io/testimonials-grid-section-main/)
+- **GitHub Repository:** [View Code](https://github.com/altindaselif/testimonials-grid-section-main)
+- **Live Demo:** [View Live Site](https://altindaselif.github.io/testimonials-grid-section-main/)
 
-## Built with
+## Built With
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Responsive site
+- **Semantic HTML5** – meaningful markup for accessibility
+- **CSS Custom Properties** – easier theming and maintenance
+- **Flexbox** – flexible layout alignment
+- **CSS Grid** – for responsive layouts
+- **Responsive Design** – adapts to different screen sizes
+- **Desktop-First Workflow** – desktop-first, then adapted to smaller devices
 
 ## Author
 
-- Linkedin - [Elif Altındaş](https://www.linkedin.com/in/elifaltindas/)
+- **LinkedIn:** [Elif Altındaş](https://www.linkedin.com/in/elifaltindas/)
+- **Frontend Mentor:** [@altindaselif](https://www.frontendmentor.io/profile/altindaselif)
