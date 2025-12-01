@@ -4,9 +4,9 @@ This is a Testimonials Grid Section that you can use on your websites.
 
 ## Screenshots
 
-- **Desktop:** ![Desktop Screenshot](desktop-screenshot.png)
-- **Tablet:** ![Tablet Screenshot](tablet-screenshot.png)
-- **Mobile:** ![Mobile Screenshot](mobile-screenshot.png)
+- **Desktop:** [Desktop Screenshot](desktop-screenshot.png)
+- **Tablet:** [Tablet Screenshot](tablet-screenshot.png)
+- **Mobile:** [Mobile Screenshot](mobile-screenshot.png)
 
 ## Links
 
